@@ -14,16 +14,16 @@ makeCacheSolve <- function(originalMatrix = matrix()) {
 	# Creates a list containing functions required by cacheSolve.
 	#
 	# Args:
-	#	originalMatrix: the numeric matrix to be inverted; must be invertable.
+	#   originalMatrix: the numeric matrix to be inverted; must be invertable.
 	#
 	# Returns: 
-	#	A list consisting of function definitions.  The list is required as 
-	#       input to cacheSolve.  Functions defined in the list are as follows:
-	#	  resetOriginalMatrix: set the value of the original matrix to a new 
-	#                              value and initialize cachedInverse = NULL. 
-	#	  getOriginalMatrix:   get the value of the original matrix.
-	#	  setCachedInverse:    set the value of the inverse matrix.
-	#         getCachedInverse:    get the value of the inverse matrix.
+	#   A list consisting of function definitions.  The list is required as 
+	#   input to cacheSolve.  Functions defined in the list are as follows:
+	#       resetOriginalMatrix: set the value of the original matrix to a new 
+	#                            value and initialize cachedInverse = NULL. 
+	#       getOriginalMatrix:   get the value of the original matrix.
+	#       setCachedInverse:    set the value of the inverse matrix.
+	#       getCachedInverse:    get the value of the inverse matrix.
 	
 	cachedInverse <- NULL  
 	
@@ -46,9 +46,9 @@ makeCacheSolve <- function(originalMatrix = matrix()) {
 	
 	# return a list containing the above functions:
 	list( resetOriginalMatrix = resetOriginalMatrix,
-		  getOriginalMatrix   = getOriginalMatrix,
-		  setCachedInverse    = setCachedInverse,
-		  getCachedInverse    = getCachedInverse
+	      getOriginalMatrix   = getOriginalMatrix,
+	      setCachedInverse    = setCachedInverse,
+	      getCachedInverse    = getCachedInverse
 	)
 }
 
