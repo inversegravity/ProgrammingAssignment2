@@ -18,12 +18,12 @@ makeCacheSolve <- function(originalMatrix = matrix()) {
 	#
 	# Returns: 
 	#	A list consisting of function definitions.  The list is required as 
-	#   input to cacheSolve.  Functions defined in the list are as follows:
-	#		resetOriginalMatrix: set the value of the original matrix to a new 
-	#                            value and initialize cachedInverse = NULL. 
-	#	    getOriginalMatrix:   get the value of the original matrix.
-	#	    setCachedInverse:    set the value of the inverse matrix.
-	#		getCachedInverse:    get the value of the inverse matrix.
+	#       input to cacheSolve.  Functions defined in the list are as follows:
+	#	  resetOriginalMatrix: set the value of the original matrix to a new 
+	#                              value and initialize cachedInverse = NULL. 
+	#	  getOriginalMatrix:   get the value of the original matrix.
+	#	  setCachedInverse:    set the value of the inverse matrix.
+	#         getCachedInverse:    get the value of the inverse matrix.
 	
 	cachedInverse <- NULL  
 	
